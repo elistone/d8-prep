@@ -35,3 +35,20 @@ A commit requires a message, to use it you can say `git commit -m "this is my me
 
 To save the changes to the remote you can run `git push` this will take everything you added to the stage and `push` it up to the remote repo.
 
+## Advance use
+
+### Git checkout
+
+Git checkout allows you to pull out certain versions of the code as well as well as branches and tags.
+
+To check out a specif revision of you code you would run `git log` this will display all the changes as well as a revision number once you get this number you can use it to roll back doing `git checkout [revision] .` allowing you to be back at that revision.
+
+To checkout a branch is the same but you use the branch name `git checkout [branch-name]`.
+
+To checkout a tag you would use `git checkout tags/[tag-name]`
+
+### Git merge
+
+if you have changes on another branch that you want on your branch you will need to do a merge. A common use for this is that you have been doing work for say a ticket on your own branch called `ticket-0123`, you are now ready to push your changes to the live branch `master` so you will need to check that out.
+
+Once you have checked it out you can run `git merge ticket-0123` and this will pull all the differences inside your branch into master, once complete you can simply run a git commit with a message about merging followed by a git push to sync it all up with the remote. 
