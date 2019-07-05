@@ -37,6 +37,21 @@ To save the changes to the remote you can run `git push` this will take everythi
 
 ## Advance use
 
+### Git log
+
+The git log command shows you all the previous revisions and gives you a visual look of everything via the command line.
+
+To use `git log` - shows you all the history.
+
+By default it will show you everything in order of newest to old.
+
+`git log --decorate` // will print the branch labels on the output, so you can see what is where.
+
+`git log --decorate --graph` // will out put the the history with a graph like view
+
+`git log --decorate --oneline` // this will shorten everything down too one line compressing it to make it easier to view
+
+
 ### Git checkout
 
 Git checkout allows you to pull out certain versions of the code as well as well as branches and tags.
@@ -46,6 +61,20 @@ To check out a specif revision of you code you would run `git log` this will dis
 To checkout a branch is the same but you use the branch name `git checkout [branch-name]`.
 
 To checkout a tag you would use `git checkout tags/[tag-name]`
+
+To checkout parents without knowing a specif number you can use the `^` & `~` symbols.
+
+`git checkout HEAD^` // to go back one commit
+
+`git checkout HEAD~3` // will go back 3 commits
+
+### Git diff
+
+To see what has changed between X and Y you can use the diff command.
+
+`git diff master@{3}` // will show you the changes between current master revision and 3 revisions ago
+
+`git diff master@{2.hours.ago}` // will show you all the changes in the last 2 hours
 
 ### Git merge
 
