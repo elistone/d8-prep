@@ -2,7 +2,7 @@
 
 Preparation started: 02/07/2019
 
-Exam passed: xx/xx/xxxx
+Exam passed: 30/07/2019
 
 I am using this public repo to keep track of my training and preparation for the Drupal 8 "Acquia Certified Developer Exam".
 
